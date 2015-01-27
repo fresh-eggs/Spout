@@ -26,20 +26,14 @@ public class TheGUIServer extends Frame implements ActionListener
     private boolean bitsHaveSent = false;
     private JPanel panel;
     private Color backColor;
-    private Color foreColor;
-    private Color backColor2;
-    private Color foreColor2;
     private Color foreColor3;
 
     
-    Action accept = new AbstractAction("accept"){
-
-        /**
-         * 
-         */
+    Action accept = new AbstractAction("accept")
+    {
         private static final long serialVersionUID = 1L;
-
-        public void actionPerformed(ActionEvent arg0) {
+        public void actionPerformed(ActionEvent arg0) 
+        {
             if(!bitsHaveSent)
             {
                 chatDisplay.setCaretPosition(chatDisplay.getDocument().getLength());
@@ -59,10 +53,7 @@ public class TheGUIServer extends Frame implements ActionListener
         f.setPreferredSize(new Dimension(500, 350));
         panel = new JPanel();
 
-        backColor = new Color(0,42,53);
-        foreColor = new Color(129,152,153);
-        backColor2 = new Color(88,110,117);
-        foreColor2 = new Color(203,200,189);  
+        backColor = new Color(0,42,53); 
         foreColor3 = new Color(42,161,152);
         
         chatDisplay = new JTextArea(5,5);
@@ -85,6 +76,8 @@ public class TheGUIServer extends Frame implements ActionListener
         setSize(600, 400);
         setTitle("");
     }
+    
+    
     
     protected JTextArea getChatDisplay(){
         return chatDisplay;
