@@ -248,6 +248,7 @@ public class ServerThread implements Runnable
 			try 
 			{
 				sendToAll((String) inFromClient.readObject());
+				Thread.sleep(500);
 			} 
 			catch (IOException e1) 
 			{
