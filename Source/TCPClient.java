@@ -45,7 +45,7 @@ public class TCPClient
 	private static boolean isUsernameSet = false;
 	private static String password = null;
 	private static boolean isPasswordSet = false;
-
+	//meowmeowmeowmeowqmeowmeowmeowmeomwoemwomeowmeomwoemow
 
 	//============================
 	//    IP Check variables
